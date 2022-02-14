@@ -77,9 +77,9 @@ return (
             </div>
 
             <div className='Btn'>
-            <button className="form-submit.update-password">
-                Cấp lại mật khẩu
-            </button>
+            <Link className="update-password" to="/login">
+              Cấp lại mật khẩu
+            </Link>
             </div>
                                        
         </form>  

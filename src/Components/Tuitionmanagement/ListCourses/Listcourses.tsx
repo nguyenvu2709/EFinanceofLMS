@@ -1,4 +1,5 @@
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 import "./LC.css";
 import BoardSearch from "../../BoardSearch/BoardSearch";

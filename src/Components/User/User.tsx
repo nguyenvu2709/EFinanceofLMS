@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import user from "../../assets/user.png";
+import "./user.css";
 
 function User(){
     return(
         <div className="user">
             <img className="user-logo" src={user}/>
             <p className="user-name">User</p>
-            <a className="logout">Đăng xuất</a>
+            <Link className="logout" to="/login">Đăng xuất</Link>
         </div>
     );
 };

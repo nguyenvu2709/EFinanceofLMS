@@ -62,13 +62,23 @@ h3{
     background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
     border-radius: 8px;
   }
-  button{ 
+  .submit{
     outline: none;
     font-family: Mulish;
+    left: 40%;
+    top: 25%;
     border: 0;
     color: #f2f2f2;
-    font-size: 20px;
-    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+    font-size: 16px;
+  }
+  .update-password{ 
+    outline: none;
+    font-family: Mulish;
+    left: 33%;
+    top: 25%;
+    border: 0;
+    color: #f2f2f2;
+    font-size: 16px;
   }
   .forgot-pass{
     position: absolute;
@@ -91,7 +101,7 @@ h3{
     position: absolute;
     left: 71.25%;
     top: 43.93%;
-    font-size: 15px;
+    font-size: 18px;
     color: silver;
   }
   .form-icon2{
@@ -103,8 +113,8 @@ h3{
   }
   .form-icon3{
     position: absolute;
-    left: 5.25%;
-    top: 320.93%;
+    left: 71%;
+    top: 51.45%;
   }
   a{
     position: absolute;

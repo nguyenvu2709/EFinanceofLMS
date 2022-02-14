@@ -1,4 +1,5 @@
 import React from 'react';
+import "./navbar.css";
 import Logo from '../../assets/Logo.png';
 import money from '../../assets/money.png';
 import Basicmoney from '../../assets/Basicmoney.png';
@@ -19,12 +20,12 @@ function Navbar() {
         <ul className='sidebar-list'>
             <li className='sidebar-title'>
                 <a href='#'>
-                    <span className='title-content'>
-                        Quản lý học phí
+                    <span className='title-content1'>
+                        <div className='content1'>
+                            Quản lý học phí
+                        </div>
                         <ul className='title-list'>
-                            <li className='title-item'>
-                                Danh sách lớp học
-                            </li>
+                            <li className='title-item'>Danh sách lớp học</li>
                             <li className='title-item'>Danh sách biểu phí</li>
                             <li className='title-item'>Danh sách khoản thu</li>
                             <li className='title-item'>Hình thưc thu</li>
@@ -36,14 +37,14 @@ function Navbar() {
             </li>
             <li className='sidebar-title'>
                 <a href='#'>
-                    <span className='title-content'>
+                    <span className='title-content2'>
                         Quản lý lương
                     </span>
                 </a>
             </li>
             <li className='sidebar-title'>
                 <a href='#'>
-                    <span className='title-content'>
+                    <span className='title-content3'>
                         Đề xuất và phê duyệt
                     </span>
                 </a>

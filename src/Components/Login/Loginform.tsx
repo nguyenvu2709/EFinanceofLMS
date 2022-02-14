@@ -57,9 +57,9 @@ return (
             </div>
 
             <div className='Btn'>
-            <button className="form-submit.update-password">
+            <Link className="submit" to="/Home">
               Đăng nhập
-            </button>  
+            </Link>  
             </div>  
 </form>  
 </div>

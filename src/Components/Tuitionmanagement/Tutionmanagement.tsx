@@ -5,7 +5,7 @@ import User from "../User/User";
 
 function Tuitionmanagement() {
     return(
-        <div className="tuition-management">
+        <div className="Home">
             <Navbar/>
             <User/>
         </div>
