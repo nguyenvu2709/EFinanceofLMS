@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from '/Users/Win 10/project-tt1/src/assets/Logo.png';
-import money from '/Users/Win 10/project-tt1/src/assets/money.png';
-import Basicmoney from '/Users/Win 10/project-tt1/src/assets/Basicmoney.png';
-import folder from '/Users/Win 10/project-tt1/src/assets/folder.png';
+import Logo from '../../assets/Logo.png';
+import money from '../../assets/money.png';
+import Basicmoney from '../../assets/Basicmoney.png';
+import folder from '../../assets/folder.png';
 
 function Navbar() {
   return (

@@ -145,10 +145,10 @@ function Listcourses () {
                             <FaChevronDown className="arrow-icon"/>
                         </div>
                     </div>
-                    <div className="board-listCourses-body-header-item">
+                    <div className="body-header-item">
                         <span>Số lượng biểu phí</span>
                     </div>
-                    <div className="board-listCourses-body-header-item">
+                    <div className="body-header-item">
                         <span>Ngày cập nhật</span>
                         <div className="arrow-icons">
                             <FaChevronUp className="arrow-icon"/>
@@ -157,14 +157,14 @@ function Listcourses () {
                     </div>
                 </div>
             
-            <ul className="board-listCourses-body-list">
+            <ul className="body-list">
                 {listCourses.map((course) => { 
                     return(
-                        <li className="board-listCourses-body-item">
-                            <span className="board-listCourses-body-item-information board-listCourses-body-item-id">
+                        <li className="body-item">
+                            <span className="body-item-information body-item-id">
                                 {course.id}
                             </span>
-                            <span className="board-listCourses-body-item-information board-listCourses-body-item-classCode">
+                            <span className="body-item-information body-item-classCode">
                                 {course.classCode}
                             </span>
                             <span className="board-listCourses-body-item-information board-listCourses-body-item-className">

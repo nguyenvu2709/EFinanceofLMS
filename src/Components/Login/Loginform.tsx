@@ -1,8 +1,8 @@
 
 import { Link } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
-import bg from '/Users/Win 10/project-tt1/src/assets/bg.png';
-import password from '/Users/Win 10/project-tt1/src/assets/password.png';
+import bg from '../../assets/bg.png';
+import password from '../../assets/password.png';
 import './login.css';
 
 function Loginform() {
