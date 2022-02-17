@@ -1,5 +1,5 @@
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-
+import { listCourses } from "../../data/listCourses";
 import { Link } from "react-router-dom";
 import "./LC.css";
 import BoardSearch from "../../BoardSearch/BoardSearch";
@@ -12,11 +12,11 @@ function Listcourses () {
             <div className="board-listCourses-header">
                 <ul className="board-listCourses-header-list">
                     <li className="board-listCourses-header-item">
-                        <span className="board-listCourses-header-item-name">
+                        <span className="board-listCourses-header-item-name1">
                             Hệ đào tạo
                         </span>
                         <div className="board-listCourses-header-dropdown">
-                            <select className="board-listCourses-header-item-options">
+                            <select className="board-listCourses-header-item-options1">
                                 <option className="board-listCourses-header-item-option"
                                     value="Theo tín chỉ">
                                         Theo tín chỉ
@@ -30,11 +30,11 @@ function Listcourses () {
                         </div>            
                     </li>
                     <li className="board-listCourses-header-item">
-                        <span className="board-listCourses-header-item-name">
+                        <span className="board-listCourses-header-item-name2">
                             Niên khoá
                         </span>
                         <div className="board-listCourses-header-dropdown">
-                            <select className="board-listCourses-header-item-options">
+                            <select className="board-listCourses-header-item-options2">
                                 <option className="board-listCourses-header-item-option"
                                     hidden
                                     value="">
@@ -57,11 +57,11 @@ function Listcourses () {
                         </div>
                     </li>
                     <li className="board-listCourses-header-item">
-                        <span className="board-listCourses-header-item-name">
+                        <span className="board-listCourses-header-item-name3">
                             Khoa
                         </span>
                         <div className="board-listCourses-header-dropdown">
-                        <select className="board-listCourses-header-item-options">
+                        <select className="board-listCourses-header-item-options3">
                                 <option className="board-listCourses-header-item-option"
                                     hidden
                                     value="">
@@ -96,11 +96,11 @@ function Listcourses () {
                         </div>
                     </li>
                     <li className="board-listCourses-header-item">
-                        <span className="board-listCourses-header-item-name">
+                        <span className="board-listCourses-header-item-name4">
                             Ngành
                         </span>
                         <div className="board-listCourses-header-dropdown">
-                        <select className="board-listCourses-header-item-options">
+                        <select className="board-listCourses-header-item-options4">
                                 <option className="board-listCourses-header-item-option"
                                     hidden
                                     value="">

@@ -1,0 +1,14 @@
+.board-search-input{
+    position: absolute;
+    height: 30px;
+    width: 280px;
+    left: 1150px;
+    top: -45px;
+    border-radius: 24px;
+    background: #F0F3F6;
+}
+.board-search-icon{
+    position: absolute;
+    left: 1160px;
+    top: -35px;
+}
