@@ -7,7 +7,7 @@ function User(){
     return(
         <div className="user">
             <img className="user-logo" src={user}/>
-            <p className="user-name">User</p>
+            <p className="user-name">User Name</p>
             <Link className="logout" to="/login">Đăng xuất</Link>
         </div>
     );

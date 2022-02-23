@@ -12,11 +12,11 @@ function Listcourses () {
             <div className="board-listCourses-header">
                 <ul className="board-listCourses-header-list">
                     <li className="board-listCourses-header-item">
-                        <span className="board-listCourses-header-item-name1">
+                        <span className="board-listCourses-header-item-name">
                             Hệ đào tạo
                         </span>
                         <div className="board-listCourses-header-dropdown">
-                            <select className="board-listCourses-header-item-options1">
+                            <select className="board-listCourses-header-item-options">
                                 <option className="board-listCourses-header-item-option"
                                     value="Theo tín chỉ">
                                         Theo tín chỉ
@@ -30,11 +30,11 @@ function Listcourses () {
                         </div>            
                     </li>
                     <li className="board-listCourses-header-item">
-                        <span className="board-listCourses-header-item-name2">
+                        <span className="board-listCourses-header-item-name">
                             Niên khoá
                         </span>
                         <div className="board-listCourses-header-dropdown">
-                            <select className="board-listCourses-header-item-options2">
+                            <select className="board-listCourses-header-item-options">
                                 <option className="board-listCourses-header-item-option"
                                     hidden
                                     value="">
@@ -57,11 +57,11 @@ function Listcourses () {
                         </div>
                     </li>
                     <li className="board-listCourses-header-item">
-                        <span className="board-listCourses-header-item-name3">
+                        <span className="board-listCourses-header-item-name">
                             Khoa
                         </span>
                         <div className="board-listCourses-header-dropdown">
-                        <select className="board-listCourses-header-item-options3">
+                        <select className="board-listCourses-header-item-options">
                                 <option className="board-listCourses-header-item-option"
                                     hidden
                                     value="">
@@ -96,11 +96,11 @@ function Listcourses () {
                         </div>
                     </li>
                     <li className="board-listCourses-header-item">
-                        <span className="board-listCourses-header-item-name4">
+                        <span className="board-listCourses-header-item-name">
                             Ngành
                         </span>
                         <div className="board-listCourses-header-dropdown">
-                        <select className="board-listCourses-header-item-options4">
+                        <select className="board-listCourses-header-item-options">
                                 <option className="board-listCourses-header-item-option"
                                     hidden
                                     value="">
@@ -151,7 +151,7 @@ function Listcourses () {
                     </div>
                     <div className="body-header-item">
                         <span>Ngày cập nhật</span>
-                        <div className="arrow-icons">
+                        <div className="arrow-icons1">
                             <FaChevronUp className="arrow-icon"/>
                             <FaChevronDown className="arrow-icon"/>
                         </div>
@@ -180,6 +180,7 @@ function Listcourses () {
                             <Link to="detail-course" className="board-listCourses-body-item-information">
                                 <img className="board-listCourses-body-item-icon" src={iconInfo}/>
                             </Link>
+
                         </li>
                     );
                 })}

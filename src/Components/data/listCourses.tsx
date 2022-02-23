@@ -1,5 +1,3 @@
-import { type } from "os";
-
 type listCoursesprops = {
     id: number;
     classCode: string;
@@ -19,7 +17,7 @@ export let listCourses:listCoursesprops[] = [
     {
         id: 2,
         classCode: "19 123 03B",
-        className: "KT_19",
+        className: "KT_19B",
         quantity: 2,
         update: "01/07/2021",
     },
@@ -33,7 +31,7 @@ export let listCourses:listCoursesprops[] = [
     {
         id: 4,
         classCode: "19 123 03B",
-        className: "KT_19",
+        className: "KT_19B",
         quantity: 2,
         update: "01/07/2021",
     },
@@ -47,7 +45,7 @@ export let listCourses:listCoursesprops[] = [
     {
         id: 6,
         classCode: "19 123 03B",
-        className: "KT_19",
+        className: "KT_19B",
         quantity: 2,
         update: "01/07/2021",
     },
@@ -61,7 +59,7 @@ export let listCourses:listCoursesprops[] = [
     {
         id: 8,
         classCode: "19 123 03B",
-        className: "KT_19",
+        className: "KT_19B",
         quantity: 2,
         update: "01/07/2021",
     }

@@ -1,39 +1,49 @@
-.user-logo{
+
+.logout{
+    border-bottom: 1px solid #ff7506;
+    color: #ff7506;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.user{
+    align-items: center;
+    display: inline-flex;
+    justify-content: end;
+    margin-right: 64px;
+    margin-top: 16px;
     position: absolute;
-    left: 80.33%;
-    right: 8.33%;
-    top: 6.33%;
-    bottom: 8.33%;
+    top: 0;
+    right: 0;
+}
+.user-logo{
+    height: 34px;
+    width: 34px;
 }
 .user-name{
-    position: absolute;
-    left: 83.35%;
-    right: 8.33%;
-    top: 4.98%;
-    bottom: 8.33%;
-
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 0.015em;
-
-    /* /Orange / 7 */
-
+    position: relative;
     color: #373839;
-}
-.logout{
-    position: absolute;
-    left: 86.35%;
-    top: 7.25%;
-    bottom: 8.33%;
-
     font-family: Source Sans Pro;
+    font-size: 16px;
     font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 130%;
-
-    color: #FF7506;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    line-height: 20px;
+    margin-left: 6px;
+    padding-right: 25px;
+}
+.user-name::after{
+    border-left: 1px solid #823b00;
+    content: "";
+    display: block;
+    height: 36px;
+    margin: 0 12px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }

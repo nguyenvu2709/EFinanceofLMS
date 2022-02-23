@@ -67,7 +67,7 @@ return (
                 />
             </div>
 
-            <Link className='form-option' to="/login">
+            <Link className='form-option' to="/">
                 <span>Quay lại trang chủ</span>
             </Link>
 

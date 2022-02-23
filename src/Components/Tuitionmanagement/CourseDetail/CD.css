@@ -1,0 +1,243 @@
+.container-board.container-board-detailCourse {
+    height: 75.74074074%;
+    width: 85.41666667%;
+  }
+  
+  /* board detail course information */
+  .board-detailCourse-information {
+    width: 92.1341463%;
+    height: 17.2371638%;
+    border-radius: 16px;
+    border: 1px solid #ff7506;
+    background: #fff9f4;
+    position: absolute;
+    top: 24px;
+    left: 64px;
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+  }
+  
+  .board-detailCourse-information-group {
+    display: flex;
+    margin-right: 245px;
+  }
+  
+  .board-detailCourse-information-group .group-title.group-title-class {
+    margin-right: 100px;
+  }
+  
+  .board-detailCourse-information-group .group-title.group-title-program {
+    margin-right: 22px;
+  }
+  
+  .board-detailCourse-information-class-title {
+    display: block;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    color: #373839;
+  }
+  
+  .board-detailCourse-information-class-title:nth-child(2),
+  .board-detailCourse-information-class-content:nth-child(2) {
+    margin: 16px 0;
+  }
+  
+  .board-detailCourse-information-class-content {
+    display: block;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    line-height: 21px;
+    color: #373839;
+    opacity: 0.8;
+  }
+  
+  /* board detail course listStudents btn */
+  .board-detailCourse-listStudents-btn {
+    position: absolute;
+    top: 169px;
+    left: 64px;
+    height: 52px;
+    width: 222px;
+    border-radius: 8px;
+    background: #ff7506;
+    font-family: Mulish;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  /* board detail Course quantity */
+  .board-detailCourse-quantity {
+    position: absolute;
+    top: 265px;
+    left: 64px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    color: #373839;
+  }
+  
+  .board-detailCourse-quantity span {
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 21px;
+    margin-left: 8px;
+  }
+  
+  .board-detailCourse-information::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #373839;
+    opacity: 0.2;
+    position: absolute;
+    top: 265px;
+    width: 100%;
+    left: 0;
+  }
+  
+  /* board detail Course tuition */
+  /* header */
+  .board-detailCourse-tuition {
+    position: absolute;
+    top: 341px;
+    left: 64px;
+    width: 92.1341463%;
+  }
+  
+  .board-detailCourse-tuition-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .board-detailCourse-tuition-title {
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 33px;
+    letter-spacing: 0.015em;
+    color: #cc5c00;
+  }
+  
+  .board-detailCourse-tuition-btnAdd {
+    border: none;
+    height: 52px;
+    width: 208px;
+    border-radius: 8px;
+    background: #ff7506;
+    font-family: Mulish;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .board-detailCourse-tuition-btnAdd-iconPlus {
+    margin-right: 10px;
+  }
+  
+  /* table */
+  .board-detailCourse-tuition-table {
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    margin-top: 16px;
+  }
+  
+  /* header */
+  .board-detailCourse-tuition-table-header {
+    background: #373839;
+    border-radius: 4px 4px 0px 0px;
+    padding-left: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .board-detailCourse-tuition-table-title {
+    font-family: Mulish;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+    color: #fafbfc;
+  }
+  
+  .board-detailCourse-tuition-table-title:nth-child(2) {
+    margin-left: 180px;
+  }
+  
+  .board-detailCourse-tuition-table-title:nth-child(3) {
+    margin-left: 207px;
+  }
+  
+  .board-detailCourse-tuition-table-title:nth-child(4) {
+    margin-left: 428px;
+  }
+  
+  /* tuition list */
+  .board-detailCourse-tuition-table-list {
+    list-style: none;
+    max-height: 230px;
+    overflow-y: scroll;
+  }
+  
+  .board-detailCourse-tuition-table-item {
+    padding-left: 120px;
+    height: 46px;
+    position: relative;
+  }
+  
+  .board-detailCourse-tuition-table-item:nth-of-type(2n) {
+    background: #f0f3f6;
+  }
+  
+  .board-detailCourse-tuition-table-item .tuition-table-item {
+    font-family: Source Sans Pro;
+    color: #373839;
+    position: absolute;
+    top: 12px;
+  }
+  
+  .board-detailCourse-tuition-table-item .tuition-table-item-update {
+    left: 394px;
+  }
+  
+  .board-detailCourse-tuition-table-item .tuition-table-item-status {
+    left: 708px;
+  }
+  
+  .board-detailCourse-tuition-table-item .tuition-table-item-stopApply {
+    margin-left: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    color: #ed2025;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .board-detailCourse-tuition-table-item .tuition-table-item-detail {
+    top: 10px;
+    left: 1250px;
+    cursor: pointer;
+  }
+  
+  .board-detailCourse-tuition-table-item .tuition-table-item-detail-icon {
+    width: 26px;
+    height: 26px;
+  }
+  
