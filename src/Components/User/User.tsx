@@ -8,7 +8,7 @@ function User(){
         <div className="user">
             <img className="user-logo" src={user}/>
             <p className="user-name">User Name</p>
-            <Link className="logout" to="/login">Đăng xuất</Link>
+            <Link className="logout" to="/">Đăng xuất</Link>
         </div>
     );
 };

@@ -5,10 +5,11 @@
   
   /* board listCourses header */
   .board-listCourses-header {
+
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: -500px;
+    margin-top: -600px;
     margin-left: 190px;
     padding-top: 24px;
   }
@@ -77,8 +78,9 @@
   
   /* board listCourses body */
   .board-listCourses-body {
-    height: 69.513692%;
-    margin-left: 64px;
+    height: 100%;
+    margin-left: 190px;
+    margin-top: 50px;
     width: 92.123606%;
     border: 1px solid #f2f2f2;
     border-radius: 8px;
@@ -104,7 +106,22 @@
     display: flex;
     align-items: center;
   }
-  
+  .body-header-item{
+    font-family: Mulish;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+    color: #fff;
+    margin-right: 110px;
+    display: flex;
+    align-items: center;
+  }
+  .arrow-icons1{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    margin-left: 7px;
+  }
   .board-listCourses-body-header-item .arrow-icons {
     display: flex;
     flex-direction: column;
@@ -121,8 +138,17 @@
     max-height: 95.23%;
     overflow-y: scroll;
   }
-  
+  .body-item-information{
+    position: relative;
+  }
+  .body-item-id{
+    left: 48px;
+  }
+  .body-item-classCode{
+    left: 198px;
+  }
   .board-listCourses-body-item {
+
     display: flex;
     align-items: center;
     padding-left: 36px;
@@ -138,38 +164,29 @@
     font-size: 16px;
     color: #373839;
   }
+
   
-  .board-listCourses-body-item-information.board-listCourses-body-item-id {
-    position: absolute;
-    left: 48px;
+  .board-listCourses-body-item-information{
+    position: relative;
+  }
+  .board-listCourses-body-item-className {
+    left: 347px;
   }
   
-  .board-listCourses-body-item-information.board-listCourses-body-item-classCode {
-    position: absolute;
-    left: 213px;
+.board-listCourses-body-item-quantity {
+    left: 570px;
   }
   
-  .board-listCourses-body-item-information.board-listCourses-body-item-className {
-    position: absolute;
-    left: 430px;
+.board-listCourses-body-item-update {
+    left: 770px;
   }
   
-  .board-listCourses-body-item-information.board-listCourses-body-item-quantity {
-    position: absolute;
-    left: 712px;
-  }
-  
-  .board-listCourses-body-item-information.board-listCourses-body-item-update {
-    position: absolute;
-    left: 926px;
-  }
-  
-  .board-listCourses-body-item-information .board-listCourses-body-item-icon {
-    position: absolute;
-    left: 1210px;
+.board-listCourses-body-item-icon {
+  position: relative;
+    left: 870px;
     color: #ff7506;
     cursor: pointer;
     width: 26px;
-    margin-top: -12px;
+    margin-top: 10px;
   }
   
