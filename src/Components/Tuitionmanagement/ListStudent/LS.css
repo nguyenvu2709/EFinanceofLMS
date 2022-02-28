@@ -17,204 +17,208 @@
   
   /* board-listStudent-header */
   .board-listStudent-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 64px;
+    width: 92.1341463%;
+    height: 205px;
+    border: 1px solid #ff7506;
+    border-radius: 16px;
     margin-top: -575px;
     margin-left: 150px;
+    background: #fff9f4;
+    padding-left: 64px;
   }
   
-  .board-listStudent-header .board-listStudent-header-className {
+  .board-detailStudent-header-title {
     font-family: Mulish;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.015em;
     color: #cc5c00;
+    margin-top: 16px;
   }
   
-  /* board-listStudent-body */
-  .board-listStudent-body {
-    height: 69.513692%;
-    margin-left: 210px;
-    width: 92.123606%;
-    border: 1px solid #f2f2f2;
-    border-radius: 8px;
-    position: relative;
-  }
-  
-  /* header */
-  .board-listStudent-body-header {
-    background: linear-gradient(270deg, #ff5400 0%, #f17f21 80.56%);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  .board-detailStudent-header-listInfo {
+    list-style: none;
     display: flex;
-    height: 40px;
-    padding-left: 36px;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   
-  .board-listStudent-body-header-item {
+  .board-detailStudent-header-item {
+    display: flex;
+    width: 25%;
+    margin-top: 16px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    align-items: center;
+    color: #373839;
+  }
+  
+  .board-detailStudent-header-item span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+  }
+  
+  .board-detailStudent-header-item p {
+    opacity: 0.8;
+  }
+  
+  .detailStudent-header-item-col1 {
+    width: 24%;
+  }
+  
+  .detailStudent-header-item-col2 {
+    width: 40%;
+  }
+  
+  .detailStudent-header-item-col3 {
+    width: 48%;
+  }
+  
+  .detailStudent-header-item-col4 {
+    width: 25%;
+  }
+  
+  /* body */
+  .board-detailStudent-body {
+    margin-top: 40px;
+    margin-left: 64px;
+  }
+  
+  .board-detailStudent-body-title {
     font-family: Mulish;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.015em;
-    color: #fff;
+    color: #cc5c00;
+    margin-bottom: 16px;
+  }
+  
+  .board-detailStudent-body-table {
+    width: 95.9%;
+    height: 33.007%;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+  }
+  
+  .board-detailStudent-body-table .detailStudent-body-table-header {
+    list-style: none;
+    background: #ff7506;
+    border-radius: 8px 8px 0px 0px;
     display: flex;
+    height: 40px;
+    padding-left: 64px;
     align-items: center;
   }
   
-  .board-listStudent-body-header-item:nth-child(2) {
-    margin-left: 48px;
-  }
-  
-  .board-listStudent-body-header-item:nth-child(3) {
-    margin-left: 98px;
-  }
-  
-  .board-listStudent-body-header-item:nth-child(4) {
-    margin-left: 64px;
-  }
-  
-  .board-listStudent-body-header-item:nth-child(5) {
-    margin-left: 87px;
-  }
-  
-  .board-listStudent-body-header-item:nth-child(6) {
-    margin-left: 61px;
-  }
-  
-  .board-listStudent-body-header-item:nth-child(7) {
-    margin-left: 46px;
-  }
-  
-  .board-listStudent-body-header-item:nth-child(8) {
-    margin-left: 39px;
-  }
-  
-  .board-listStudent-body-header-item .arrow-icons {
+  .detailStudent-body-table-header .detailStudent-body-table-header-item {
+    font-family: Mulish;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+    color: #fafbfc;
     display: flex;
-    flex-direction: column;
-    font-size: 10px;
-    margin-left: 10px;
+    flex-direction: row-reverse;
   }
   
-  /* list student */
-  .board-listStudent-body-list {
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    max-height: 95.83%;
+  .detailStudent-body-table-header-item-col2 {
+    width: 9%;
+  }
+  
+  .detailStudent-body-table-header-item-col3 {
+    width: 11%;
+  }
+  
+  .detailStudent-body-table-header-item-col4 {
+    width: 9.6%;
+  }
+  
+  .detailStudent-body-table-header-item-col5 {
+    width: 13%;
+  }
+  
+  .detailStudent-body-table-header-item-col6 {
+    width: 15%;
+  }
+  
+  .detailStudent-body-table-header-item-col7 {
+    width: 13.5%;
+  }
+  
+  .detailStudent-body-table-header-item-col8 {
+    width: 15.7%;
+  }
+  
+  .board-detailStudent-body-table .detailStudent-body-table-content {
+    max-height: 230px;
     overflow-y: scroll;
   }
   
-  .board-listStudent-body-item {
-    display: flex;
-    align-items: center;
-    padding-left: 36px;
-    height: 58px;
+  .board-detailStudent-body-table
+    .detailStudent-body-table-content::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 15px;
+    background-color: #e0e0e0;
   }
   
-  .board-listStudent-body-item:nth-of-type(2n) {
-    background-color: #f0f3f6;
+  .board-detailStudent-body-table
+    .detailStudent-body-table-content::-webkit-scrollbar-thumb {
+    background-color: #999796;
+    border-radius: 15px;
   }
   
-  .board-listStudent-body-item-information {
+  .detailStudent-body-table-content .detailStudent-body-table-content-item {
+    list-style: none;
     font-family: Source Sans Pro;
     font-size: 16px;
+    line-height: 21px;
     color: #373839;
-  }
-  
-  .board-listStudent-body-item-information.board-listStudent-body-item-order {
-    position: absolute;
-    left: 48px;
-  }
-  
-  .board-listStudent-body-item-information.board-listStudent-body-item-name {
-    position: absolute;
-    left: 116px;
-  }
-  
-  .board-listStudent-body-item-information.board-listStudent-body-item-studentID {
-    position: absolute;
-    left: 336px;
-  }
-  
-  .board-listStudent-body-item-information.board-listStudent-body-item-gender {
-    position: absolute;
-    left: 472px;
-  }
-  
-  .board-listStudent-body-item-information.board-listStudent-body-item-DOB {
-    position: absolute;
-    left: 626px;
-  }
-  
-  .board-listStudent-body-item-information.board-listStudent-body-item-quantity {
-    position: absolute;
-    left: 830px;
-  }
-  
-  .board-listStudent-body-item-information.board-listStudent-body-item-discount {
-    position: absolute;
-    left: 958px;
-  }
-  
-  .board-listStudent-body-item-information.board-listStudent-body-item-status {
-    position: absolute;
-    left: 1134px;
-    min-width: 142px;
-    min-height: 38px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    padding: 0 16px;
+    height: 46px;
+    padding-left: 64px;
+    position: relative;
   }
   
-  .board-listStudent-body-item-information.board-listStudent-body-item-status.board-listStudent-body-item-status--done {
-    border: 1px solid #0b80ec;
-    color: #0b80ec;
+  .detailStudent-body-table-content
+    .detailStudent-body-table-content-item:nth-of-type(2n + 1) {
+    background: #f0f3f6;
   }
   
-  .board-listStudent-body-item-information.board-listStudent-body-item-status.board-listStudent-body-item-status--notdone {
-    border: 1px solid #ed2025;
-    color: #ed2025;
-  }
-  
-  .board-listStudent-body-item-information.board-listStudent-body-item-status::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    margin-right: 8px;
-  }
-  
-  .board-listStudent-body-item-information.board-listStudent-body-item-status.board-listStudent-body-item-status--done::before {
-    background: #0b80ec;
-  }
-  
-  .board-listStudent-body-item-information.board-listStudent-body-item-status.board-listStudent-body-item-status--notdone::before {
-    background: #ed2025;
-  }
-  
-  .board-listStudent-body-item-information .board-listStudent-body-item-icon {
+  .detailStudent-body-table-content .detailStudent-body-table-content-item span {
     position: absolute;
-    right: 124px;
-    color: #ff7506;
+  }
+  
+  .detailStudent-body-table-content-item-col1 {
+    left: 73px;
+  }
+  
+  .detailStudent-body-table-content-item-col2 {
+    left: 160px;
+  }
+  
+  .detailStudent-body-table-content-item-col3 {
+    left: 294px;
+  }
+  
+  .detailStudent-body-table-content-item-col4 {
+    left: 454px;
+  }
+  
+  .detailStudent-body-table-content-item-col5 {
+    left: 660px;
+  }
+  
+  .detailStudent-body-table-content-item-col6 {
+    left: 828px;
+  }
+  
+  .detailStudent-body-table-content-item-col7 {
+    left: 1044px;
+  }
+  
+  .detailStudent-body-table-content-item-col8 {
+    left: 1312px;
     cursor: pointer;
-    width: 26px;
-    margin-top: -12px;
   }
-  
-  .board-listStudent-body-total {
-    font-family: Mulish;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0.015em;
-    color: #373839;
-    position: absolute;
-    right: 0;
-    margin-top: 24px;
-  }
-  

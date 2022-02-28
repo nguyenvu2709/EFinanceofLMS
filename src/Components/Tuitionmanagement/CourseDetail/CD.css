@@ -194,7 +194,16 @@
     max-height: 230px;
     overflow-y: scroll;
   }
+  .board-detailCourse-tuition-table-list::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 15px;
+    background-color: #e0e0e0;
+  }
   
+  .board-detailCourse-tuition-table-list::-webkit-scrollbar-thumb {
+    background-color: #999796;
+    border-radius: 15px;
+  }
   .board-detailCourse-tuition-table-item {
     padding-left: 120px;
     height: 46px;
@@ -240,4 +249,21 @@
     width: 26px;
     height: 26px;
   }
+  .modal__body-addTuition-calendar {
+    display: flex;
+    justify-content: space-between;
+  }
   
+  .modal__body-addTuition-calendar-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .modal__body-addTuition-calendar-title {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+  }
