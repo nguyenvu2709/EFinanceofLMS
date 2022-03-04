@@ -5,19 +5,21 @@
   
   /* board detail course information */
   .board-detailCourse-information {
-    width: 92.1341463%;
+    width: 86%;
     height: 17.2371638%;
     border-radius: 16px;
     border: 1px solid #ff7506;
     background: #fff9f4;
     position: absolute;
-    top: 24px;
-    left: 64px;
+    top: 124px;
+    left: 164px;
     display: flex;
     align-items: center;
     padding-left: 64px;
   }
-  
+  .body-item{
+    list-style-type: none;
+  }
   .board-detailCourse-information-group {
     display: flex;
     margin-right: 245px;
@@ -58,10 +60,10 @@
   /* board detail course listStudents btn */
   .board-detailCourse-listStudents-btn {
     position: absolute;
-    top: 169px;
-    left: 64px;
-    height: 52px;
-    width: 222px;
+    top: 269px;
+    left: 180px;
+    height: 45px;
+    width: 200px;
     border-radius: 8px;
     background: #ff7506;
     font-family: Mulish;
@@ -79,8 +81,8 @@
   /* board detail Course quantity */
   .board-detailCourse-quantity {
     position: absolute;
-    top: 265px;
-    left: 64px;
+    top: 365px;
+    left: 164px;
     font-family: Source Sans Pro;
     font-size: 16px;
     font-weight: 700;
@@ -110,9 +112,9 @@
   /* header */
   .board-detailCourse-tuition {
     position: absolute;
-    top: 341px;
-    left: 64px;
-    width: 92.1341463%;
+    top: 441px;
+    left: 155px;
+    width: 87%;
   }
   
   .board-detailCourse-tuition-header {
@@ -266,4 +268,170 @@
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 0.015em;
+  }
+  .modal .modal__content.modal__detailTuition {
+    width: 884px;
+    height: 548px;
+  }
+  
+  .modal__header-iconClose {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+  }
+  
+  .modal__detailTuition-boardInfo {
+    background: #f0f3f6;
+    height: 200px;
+    width: 756px;
+    border-radius: 8px;
+  }
+  
+  .modal__detailTuition-boardInfo .modal__detailTuition-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+  }
+  
+  .modal__detailTuition-info .modal__detailTuition-info-name {
+    font-family: Mulish;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+    color: #373839;
+    margin-top: 16px;
+  }
+  
+  .modal__detailTuition-info .modal__detailTuition-info-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+  }
+  
+  .modal__detailTuition-info-right .modal__detailTuition-info-id,
+  .modal__detailTuition-info-right .modal__detailTuition-info-year {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+  }
+  
+  .modal__detailTuition-info-right .modal__detailTuition-info-id span,
+  .modal__detailTuition-info-right .modal__detailTuition-info-year span {
+    font-weight: normal;
+    padding-left: 8px;
+  }
+  
+  .modal__detailTuition-boardInfo .modal__detailTuition-detail {
+    height: 105px;
+    width: 502px;
+    border-radius: 4px;
+    background: #ffffff;
+    margin-left: 32px;
+    margin-top: 16px;
+  }
+  
+  .modal__detailTuition-detail .modal__detailTuition-detail-list {
+    padding-top: 8px;
+  }
+  
+  .modal__detailTuition-detail-list .modal__detailTuition-detail-item {
+    list-style: none;
+    margin: 0 24px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    color: #373839;
+  }
+  
+  .modal__detailTuition-detail-list
+    .modal__detailTuition-detail-item:nth-child(1)::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #c5c5c5;
+    margin: 4px 0;
+  }
+  
+  .modal__detailTuition-update {
+    margin-top: 24px;
+    margin-bottom: 17px;
+  }
+  
+  .modal__detailTuition-update .modal__detailTuition-update-label {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    color: #373839;
+    margin-right: 56px;
+  }
+  
+  .modal__detailTuition-update .modal__detailTuition-update-date {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    color: #373839;
+  }
+  
+  .modal__detailTuition-updateTable {
+    border: 1px solid #f2f2f2;
+    height: 156px;
+    width: 756px;
+    border-radius: 8px;
+  }
+  
+  .modal__detailTuition-updateTable .modal__detailTuition-updateTable-header {
+    background: linear-gradient(270deg, #ff5400 0%, #f17f21 80.56%);
+    height: 40px;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+  }
+  
+  .modal__detailTuition-updateTable-header
+  .modal__detailTuition-updateTable-header-item {
+    width: calc(100% / 3);
+    font-family: Mulish;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+    color: #fafbfc;
+  }
+  
+  .modal__detailTuition-updateTable .modal__detailTuition-updateTable-list {
+    list-style: none;
+  }
+  
+  .modal__detailTuition-updateTable-list .modal__detailTuition-updateTable-item {
+    height: 58px;
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+  }
+  
+  .modal__detailTuition-updateTable-list
+  .modal__detailTuition-updateTable-item:nth-of-type(2n) {
+    background-color: #f0f3f6;
+  }
+  
+  .modal__detailTuition-updateTable-item
+  .modal__detailTuition-updateTable-item-info {
+    width: calc(100% / 3);
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    color: #373839;
   }
