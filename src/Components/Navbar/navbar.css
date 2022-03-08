@@ -72,7 +72,7 @@
     top: -150px;
     align-items: center;
     position: relative;
-    padding-top: 200px;
+    padding-top: 125px;
 }
 .sidebar-title-content span{
     margin-left: 14px;
@@ -112,7 +112,8 @@
     font-weight: 400;
     line-height: 21px;
     opacity: 0.7;
-    padding: 14px 0 14px 66px;
+    padding: 14px 0 14px 45px;
+    
 }
 .sidebar-title-item:last-child{
     margin-bottom: -14px;

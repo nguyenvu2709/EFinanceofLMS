@@ -7,6 +7,7 @@ import Modal, { ModalBody, ModalHeader } from "../../Modal/Modal";
 import "../tuitionmanagement.css";
 import "./CD.css";
 import iconInfo from "../../../assets/iconInfo.png";
+import Vector from "../../../assets/Vector.png"
 import iconClose from "../../../assets/iconClose.png";
 import { listTuition } from "../../data/Listtuition";
 
@@ -152,7 +153,7 @@ function Coursedetail() {
           </div>
         </div>
       </div>
-      <Modal show={showModal}>
+      <Modal className="modal__addTuition" show={showModal}>
         <ModalHeader>
           <h2 className="modal__header-title">Thêm biểu phí</h2>
         </ModalHeader>
@@ -222,6 +223,7 @@ function Coursedetail() {
           </div>
         </ModalBody>
       </Modal>
+
       <Modal className="modal__detailTuition" show={showModalDetailTuition}>
         <ModalHeader>
           <h2 className="modal__header-title">Chi tiết biểu phí</h2>

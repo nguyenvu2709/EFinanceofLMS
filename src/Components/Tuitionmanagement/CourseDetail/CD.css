@@ -251,6 +251,11 @@
     width: 26px;
     height: 26px;
   }
+  .modal .modal__content.modal__addTuition {
+    width: 884px;
+    height: 727px;
+  }
+  
   .modal__body-addTuition-calendar {
     display: flex;
     justify-content: space-between;
@@ -269,6 +274,8 @@
     line-height: 20px;
     letter-spacing: 0.015em;
   }
+  
+  /* Modal Detail Tuition */
   .modal .modal__content.modal__detailTuition {
     width: 884px;
     height: 548px;
@@ -400,7 +407,7 @@
   }
   
   .modal__detailTuition-updateTable-header
-  .modal__detailTuition-updateTable-header-item {
+    .modal__detailTuition-updateTable-header-item {
     width: calc(100% / 3);
     font-family: Mulish;
     font-size: 18px;
@@ -421,12 +428,12 @@
   }
   
   .modal__detailTuition-updateTable-list
-  .modal__detailTuition-updateTable-item:nth-of-type(2n) {
+    .modal__detailTuition-updateTable-item:nth-of-type(2n) {
     background-color: #f0f3f6;
   }
   
   .modal__detailTuition-updateTable-item
-  .modal__detailTuition-updateTable-item-info {
+    .modal__detailTuition-updateTable-item-info {
     width: calc(100% / 3);
     font-family: Source Sans Pro;
     font-size: 16px;
@@ -435,3 +442,13 @@
     line-height: 21px;
     color: #373839;
   }
+.icon-date{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  top: 10px;
+  margin-left: -250px;
+  left: -450px;
+
+}

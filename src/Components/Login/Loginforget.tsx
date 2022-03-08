@@ -12,7 +12,7 @@ function Loginforget() {
             ".form-submit.update-password"
         );
         const usernameInput: Element | null = formUpdatePassword.querySelector(
-            'input[name= "username"]'
+            'input[name= "account"]'
         );
         const confirmCodeInput: Element | null = formUpdatePassword.querySelector(
             'input[name= "verification-codes"]'
@@ -29,12 +29,12 @@ function Loginforget() {
           }
         }
 
-        if (e.target.value){
-            e.target.style.background = "#fff";
-            e.target.style.outline = "1px solid #37383980";
-        } else{
-            e.target.backgroundColor = "#f2f2f2";
-            e.target.outline = "none";
+        if (e.target.value) {
+            e.target.style.backgroundColor = "#fff";
+            e.target.style.border = "1px solid rgba(55, 56, 57, 0.5)";
+        } else {
+            e.target.style.backgroundColor = "#f2f2f2";
+            e.target.style.border = "none";
         }
     }
 return (
