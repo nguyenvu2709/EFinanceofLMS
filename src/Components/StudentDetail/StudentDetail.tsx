@@ -1,9 +1,13 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import "./SD.css";
 import iconEye from "../../assets/iconEye.png";
 import { BillDone } from "../data/BillDone";
+import Modal, { ModalBody, ModalFooter, ModalHeader } from "../Modal/Modal";
+import iconClose from "../../assets/iconClose.png"
+import { listDetail } from "../data/listDetail";
 
 const StudentDetail = () => {
+    const [showStudentDetail, setShowStudentDetail] = useState(false);
     return(
         <Fragment>
             <h2 className="container-board-title">Hồ sơ học viên</h2>
@@ -148,16 +152,92 @@ const StudentDetail = () => {
                             <span className="detailStudent-body-table-content-item-col7">
                             {billDone.cashier}
                             </span>
-                            <span className="detailStudent-body-table-content-item-col8">
-                            <img src={iconEye} />
+                            <span className="detailStudent-body-table-content-item-col8"
+                                onClick={() => setShowStudentDetail(true)}
+                            >
+                                <img src={iconEye} />
                             </span>
                         </li>
                         );
                     })}
                     </ul>
-                </div>
+                    </div>
                 </div>
             </div>
+            
+            <Modal className="modal__studentDetail" show={showStudentDetail}>
+            <ModalHeader>
+            <div className="modal__studentDetail-header">
+                <h3 className="modal__studentDetail-header-label">Số phiếu:</h3>
+                <span className="modal__studentDetail-header-content">121235</span>
+                <img
+                src={iconClose}
+                className="modal__header-iconClose"
+                onClick={() => setShowStudentDetail(false)}
+                />
+            </div>
+            </ModalHeader>
+            <ModalBody>
+            <div className="modal__studentDetail-body">
+                <h3 className="modal__studentDetail-body-title">Mã hóa đơn:</h3>
+                <div className="modal__studentDetail-body-table">
+                <div className="modal__studentDetail-table-header">
+                    <span className="modal__studentDetail-table-header-item">
+                    STT
+                    </span>
+                    <span className="modal__studentDetail-table-header-item">
+                    Mã
+                    </span>
+                    <span className="modal__studentDetail-table-header-item">
+                    Nội dung thu
+                    </span>
+                    <span className="modal__studentDetail-table-header-item">
+                    Học kỳ
+                    </span>
+                    <span className="modal__studentDetail-table-header-item">
+                    Số tiền(VNĐ)
+                    </span>
+                </div>
+                <ul className="modal__studentDetail-table-list">
+                    {listDetail.map((element, index) => {
+                    return (
+                        <li key={index} className="modal__studentDetail-table-item">
+                        <span className="modal__studentDetail-table-item-info">
+                            {index + 1}
+                        </span>
+                        <span className="modal__studentDetail-table-item-info">
+                            {element.ID}
+                        </span>
+                        <span className="modal__studentDetail-table-item-info">
+                            {element.content}
+                        </span>
+                        <span className="modal__studentDetail-table-item-info">
+                            {element.year}
+                        </span>
+                        <span className="modal__studentDetail-table-item-info">
+                            {element.money}
+                        </span>
+                        </li>
+                    );
+                    })}
+                </ul>
+                </div>
+                <div className="modal__studentDetail-body-totalMoney">
+                <span className="modal__studentDetail-totalMoney-label">
+                    Tổng thanh toán:
+                </span>
+                <span className="modal__studentDetail-totalMoney-money">
+                    5.170.000 đ
+                </span>
+                </div>
+            </div>
+            </ModalBody>
+            <ModalFooter>
+            <div className="modal__studentDetail-footer">
+                <span className="btn-showBill">Xem phiếu thu</span>
+            </div>
+            </ModalFooter>
+        </Modal>
         </Fragment>
     );
 };
