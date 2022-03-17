@@ -1,0 +1,37 @@
+.container-address {
+  align-items: center;
+  display: inline-flex;
+  cursor: default;
+  margin-bottom: 32px;
+  position: absolute;
+  top: 68px;
+  left: 217px;
+}
+
+.address-previous {
+  color: #c9c4c0;
+  font-family: Mulish;
+  font-size: 18px;
+  letter-spacing: 0.015em;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.address-previous:first-child {
+  cursor: default;
+}
+
+.address-icon {
+  color: #ff7506;
+  margin: 4px 23px 0;
+}
+
+.address-present {
+  color: #373839;
+  font-family: Mulish;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0.015em;
+  line-height: 56px;
+  margin: 0;
+}

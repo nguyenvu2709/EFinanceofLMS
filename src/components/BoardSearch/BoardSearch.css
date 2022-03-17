@@ -1,0 +1,30 @@
+.board-search {
+  position: relative;
+}
+
+.board-search-input {
+  background-color: #f0f3f6;
+  border-radius: 24px;
+  border: none;
+  color: #c5c5c5;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-style: italic;
+  height: 40.2px;
+  outline: none;
+  padding-left: 48px;
+  width: 360px;
+}
+
+.board-search-input:focus {
+  color: #373839;
+}
+
+.board-search-icon {
+  color: #c9c4c0;
+  font-size: 20px;
+  left: 12px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

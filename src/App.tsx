@@ -1,28 +1,34 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Loginform from "./Components/Login/Loginform";
-import Loginforget from "./Components/Login/Loginforget";
-import Tuitionmanagement from "./Components/Tuitionmanagement/Tutionmanagement";
-import Listcourses from "./Components/Tuitionmanagement/ListCourses/Listcourses";
-import Coursedetail from "./Components/Tuitionmanagement/CourseDetail/Coursedetail";
-import Liststudent from "./Components/Tuitionmanagement/ListStudent/Liststudent";
-import StudentDetail from "./Components/StudentDetail/StudentDetail";
+import LoginForm from "./components/Login/LoginForm/LoginForm";
+import LoginForgetForm from "./components/Login/LoginForgetForm/LoginForgetForm";
+import TuitionManagement from "./components/TuitionManagement/TuitionManagement";
+import ListCourses from "./components/TuitionManagement/ListCourses/ListCourses";
+import CourseDetail from "./components/TuitionManagement/CourseDetail/CourseDetail";
+import ListStudent from "./components/TuitionManagement/ListStudent/ListStudent";
+import StudentDetail from "./components/StudentDetail/StudentDetail";
 
-function App(){
-    return(
-        <div className="App">
-            <Routes>
-                <Route path="/" element={<Loginform/>} />
-                <Route path="forget" element={<Loginforget/>} />
-                <Route path="Home" element={<Tuitionmanagement/>} >
-                    <Route path="list-courses" element={<Listcourses/>} />
-                    <Route path="list-courses/detail-course" element={<Coursedetail/>} />
-                    <Route path="list-courses/detail-course/list-student" element={<Liststudent/>}/>
-                    <Route path="list-courses/detail-course/list-student/student-detail" element={<StudentDetail/>}/>
-                </Route>
-            </Routes>
-        </div>
-    );
+function App() {
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="password-reset" element={<LoginForgetForm />} />
+        <Route path="tuition-management" element={<TuitionManagement />}>
+          <Route path="list-courses" element={<ListCourses />} />
+          <Route path="list-courses/detail-course" element={<CourseDetail />} />
+          <Route
+            path="list-courses/detail-course/list-students"
+            element={<ListStudent />}
+          />
+          <Route
+            path="list-courses/detail-course/list-students/detail-student"
+            element={<StudentDetail />}
+          />
+        </Route>
+      </Routes>
+    </div>
+  );
 }
 
 export default App;

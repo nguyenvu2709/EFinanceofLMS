@@ -1,0 +1,389 @@
+.container-board.container-board-detailStudent {
+  height: 75.27777778%;
+  width: 85.41666667%;
+  top: 204px;
+}
+
+/* header */
+.board-detailStudent-header {
+  width: 92.1341463%;
+  height: 205px;
+  border: 1px solid #ff7506;
+  border-radius: 16px;
+  margin-left: 64px;
+  margin-top: 32px;
+  background: #fff9f4;
+  padding-left: 64px;
+}
+
+.board-detailStudent-header-title {
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #cc5c00;
+  margin-top: 16px;
+}
+
+.board-detailStudent-header-listInfo {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.board-detailStudent-header-item {
+  display: flex;
+  width: 25%;
+  margin-top: 16px;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  align-items: center;
+  color: #373839;
+}
+
+.board-detailStudent-header-item span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+.board-detailStudent-header-item p {
+  opacity: 0.8;
+}
+
+.detailStudent-header-item-col1 {
+  width: 24%;
+}
+
+.detailStudent-header-item-col2 {
+  width: 40%;
+}
+
+.detailStudent-header-item-col3 {
+  width: 48%;
+}
+
+.detailStudent-header-item-col4 {
+  width: 25%;
+}
+
+/* body */
+.board-detailStudent-body {
+  margin-top: 40px;
+  margin-left: 64px;
+}
+
+.board-detailStudent-body-title {
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #cc5c00;
+  margin-bottom: 16px;
+}
+
+.board-detailStudent-body-table {
+  width: 95.9%;
+  height: 33.007%;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+}
+
+.board-detailStudent-body-table .detailStudent-body-table-header {
+  list-style: none;
+  background: #ff7506;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  height: 40px;
+  padding-left: 64px;
+  align-items: center;
+}
+
+.detailStudent-body-table-header .detailStudent-body-table-header-item {
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #fafbfc;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.detailStudent-body-table-header-item-col2 {
+  width: 9%;
+}
+
+.detailStudent-body-table-header-item-col3 {
+  width: 11%;
+}
+
+.detailStudent-body-table-header-item-col4 {
+  width: 9.6%;
+}
+
+.detailStudent-body-table-header-item-col5 {
+  width: 13%;
+}
+
+.detailStudent-body-table-header-item-col6 {
+  width: 15%;
+}
+
+.detailStudent-body-table-header-item-col7 {
+  width: 13.5%;
+}
+
+.detailStudent-body-table-header-item-col8 {
+  width: 15.7%;
+}
+
+.board-detailStudent-body-table .detailStudent-body-table-content {
+  max-height: 230px;
+  overflow-y: scroll;
+}
+
+.board-detailStudent-body-table
+  .detailStudent-body-table-content::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 15px;
+  background-color: #e0e0e0;
+}
+
+.board-detailStudent-body-table
+  .detailStudent-body-table-content::-webkit-scrollbar-thumb {
+  background-color: #999796;
+  border-radius: 15px;
+}
+
+.detailStudent-body-table-content .detailStudent-body-table-content-item {
+  list-style: none;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  line-height: 21px;
+  color: #373839;
+  display: flex;
+  align-items: center;
+  height: 46px;
+  padding-left: 64px;
+  position: relative;
+}
+
+.detailStudent-body-table-content
+  .detailStudent-body-table-content-item:nth-of-type(2n + 1) {
+  background: #f0f3f6;
+}
+
+.detailStudent-body-table-content .detailStudent-body-table-content-item span {
+  position: absolute;
+}
+
+.detailStudent-body-table-content-item-col1 {
+  left: 73px;
+}
+
+.detailStudent-body-table-content-item-col2 {
+  left: 160px;
+}
+
+.detailStudent-body-table-content-item-col3 {
+  left: 294px;
+}
+
+.detailStudent-body-table-content-item-col4 {
+  left: 454px;
+}
+
+.detailStudent-body-table-content-item-col5 {
+  left: 660px;
+}
+
+.detailStudent-body-table-content-item-col6 {
+  left: 828px;
+}
+
+.detailStudent-body-table-content-item-col7 {
+  left: 1044px;
+}
+
+.detailStudent-body-table-content-item-col8 {
+  left: 1312px;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal__content.modal__studentDetail {
+  height: 665px;
+  width: 884px;
+  padding: 40px 0;
+}
+
+.modal__studentDetail-header {
+  display: flex;
+  align-items: center;
+  color: #373839;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  padding: 0 64px;
+}
+
+.modal__studentDetail-header .modal__studentDetail-header-label {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+.modal__studentDetail-header .modal__studentDetail-header-content {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  margin-left: 29px;
+}
+
+.modal__studentDetail-body .modal__studentDetail-body-title {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  margin: 16px 0;
+}
+
+.modal__studentDetail-body .modal__studentDetail-body-table {
+  height: 330px;
+  width: 756px;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+}
+
+.modal__studentDetail-body-table .modal__studentDetail-table-header {
+  background: linear-gradient(270deg, #ff5400 0%, #f17f21 80.56%);
+  height: 40px;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+}
+
+.modal__studentDetail-table-header .modal__studentDetail-table-header-item {
+  width: 20%;
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #fafbfc;
+}
+
+.modal__studentDetail-table-header
+  .modal__studentDetail-table-header-item:nth-child(1) {
+  width: 10%;
+}
+
+.modal__studentDetail-table-header
+  .modal__studentDetail-table-header-item:nth-child(3) {
+  width: 30%;
+}
+
+.modal__studentDetail-body-table .modal__studentDetail-table-list {
+  list-style: none;
+  max-height: 290px;
+  overflow-y: scroll;
+}
+
+.modal__studentDetail-body-table
+  .modal__studentDetail-table-list::-webkit-scrollbar {
+  width: 8px;
+  background: #e0e0e0;
+  border-radius: 15px;
+}
+
+.modal__studentDetail-body-table
+  .modal__studentDetail-table-list::-webkit-scrollbar-thumb {
+  background: #999796;
+  border-radius: 15px;
+}
+
+.modal__studentDetail-body-table
+  .modal__studentDetail-table-list::-webkit-scrollbar-track {
+  border-radius: 15px;
+  background: #e0e0e0;
+}
+
+.modal__studentDetail-table-list .modal__studentDetail-table-item {
+  height: 58px;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.modal__studentDetail-table-item .modal__studentDetail-table-item-info {
+  width: 20%;
+}
+
+.modal__studentDetail-table-item
+  .modal__studentDetail-table-item-info:nth-child(1) {
+  width: 10%;
+}
+
+.modal__studentDetail-table-item
+  .modal__studentDetail-table-item-info:nth-child(3) {
+  width: 30%;
+}
+
+.modal__studentDetail-table-list
+  .modal__studentDetail-table-item:nth-of-type(2n) {
+  background: #f0f3f6;
+}
+
+.modal__studentDetail-body .modal__studentDetail-body-totalMoney {
+  margin: 24px 0 48px;
+  height: 58px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.modal__studentDetail-body-totalMoney .modal__studentDetail-totalMoney-label {
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #cc5c00;
+}
+
+.modal__studentDetail-body-totalMoney .modal__studentDetail-totalMoney-money {
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #373839;
+  font-weight: bold;
+}
+
+.modal__studentDetail-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__studentDetail-footer .btn-showBill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  width: 176px;
+  border-radius: 8px;
+  background-color: #ff7506;
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+  cursor: pointer;
+}

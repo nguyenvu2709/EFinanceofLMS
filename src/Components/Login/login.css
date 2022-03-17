@@ -1,134 +1,110 @@
+.login {
+  background: url("../Assets/LoginBackground.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
-h3{
-    position: absolute;
-    left: 65.62%;
-    right: 6.42%;
-    top: 23.98%;
-    bottom: 70.46%;
-    font-family: Mulish;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.015em;
-    color: #373839;
-  }
-  
-  .login-control{
-    padding-left: 42px;
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    border: 1px solid mediumaquamarine;
-    outline: none;
-    background-color: #f2f2f2;
-    border-radius: 8px;
-    height: 30px;  
-    
-  }
-  
-  
-  .login-user{
-    
-    position: absolute;
-    left: 70.41%;
-    right: 18.82%;
-    top: 39.94%;
-    bottom: 60.93%;  
-  }
-  
-  
-  .login-password{
-    position: absolute;
-    left: 70.41%;
-    right: 18.82%;
-    top: 47.85%;
-    bottom: 51.02%;
-  
-  }
-  .Btn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    position: absolute;
-    left: 69.41%;
-    right: 10.2%;
-    top: 59.56%;
-    bottom: 35.63%;
-    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
-    border-radius: 8px;
-  }
-  .submit{
-    outline: none;
-    font-family: Mulish;
-    left: 40%;
-    top: 25%;
-    border: 0;
-    color: #f2f2f2;
-    font-size: 16px;
-  }
-  .update-password{ 
-    outline: none;
-    font-family: Mulish;
-    left: 33%;
-    top: 25%;
-    border: 0;
-    color: #f2f2f2;
-    font-size: 16px;
-  }
-  .forgot-pass{
-    position: absolute;
-    left: 80.41%;
-    right: 9.82%;
-    top: 53.94%;
-    bottom: 60.93%; 
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 130%;
-    text-align: center;
-    color: #FF7506;
-    
-  }
-  
-  
-  .form-icon1{
-    position: absolute;
-    left: 71.05%;
-    top: 43.53%;
-    font-size: 18px;
-    color: silver;
-  }
-  .form-icon2{
-    position: absolute;
-    top: 56.75%;
-    left: 81.90%;
-    font-size: 13px;
-    color: #FF5400;
-  }
-  .form-icon3{
-    position: absolute;
-    left: 70.90%;
-    top: 51.15%;
-  }
-  .form-option{
-    position: absolute;
-    top: 56.55%;
-    left: 82.70%;
-    font-size: 13px;
-    color: #FF5400;
-    text-decoration: none;
-  }
-  .submit, .update-password{
-    text-decoration: none;
-  }
-  
-  
-  
-  
-  
+.form {
+  min-width: 430px;
+  min-height: 360px;
+  position: absolute;
+  left: 66.41%;
+  right: 12.19%;
+  top: 23.98%;
+}
+
+.login .logo {
+  position: absolute;
+  top: 29px;
+  right: 64px;
+}
+
+.form-title {
+  font-family: Mulish;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.015em;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-group + .form-group {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  margin-bottom: 8px;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.015em;
+}
+
+.form-control {
+  height: 52px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  padding-left: 42px;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+}
+
+.form-icon {
+  position: absolute;
+  top: 46px;
+  left: 15px;
+  color: #c5c5c5;
+  font-size: 20.5px;
+}
+
+.form-option {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ff7506;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 28px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.form-submit {
+  background: linear-gradient(270deg, #ff5400 0%, #f17f21 80.56%);
+  border: none;
+  border-radius: 8px;
+  height: 52px;
+  width: 430px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-family: Mulish;
+  cursor: pointer;
+}
+
+.btn-login {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-submit.update-password {
+  background: #c9c4c0;
+}
+
+#confirm-code {
+  padding-left: 16px;
+}

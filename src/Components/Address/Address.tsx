@@ -1,6 +1,6 @@
 import { FaChevronRight } from "react-icons/fa";
-import "./AR.css";
-import { addresses } from "../data/addresses";
+import "./Address.css";
+import { addresses } from "../data/address";
 import { Fragment } from "react";
 
 function Address() {

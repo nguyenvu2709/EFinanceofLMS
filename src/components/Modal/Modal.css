@@ -1,0 +1,167 @@
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(10, 10, 10, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal .modal__content {
+  background: #fff;
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Modal header */
+.modal__header-title {
+  font-family: Mulish;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.015em;
+  color: #373839;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+}
+
+/* Modal body */
+.modal__body {
+  padding: 0 64px;
+}
+
+.modal__body-table {
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+}
+
+.modal__body-table-header {
+  background: linear-gradient(270deg, #ff5400 0%, #f17f21 80.56%);
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* ---------------Modal Add Tuition--------------- */
+/* Header */
+.modal__body-table-header.addTuition__table-header {
+  padding-left: 50px;
+}
+
+.modal__body-table.modal__body-addTuition-table {
+  height: 432px;
+  width: 756px;
+}
+
+.addTuition__table-header .addTuition__header-item {
+  display: flex;
+  align-items: center;
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.addTuition__header-item .arrow-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.addTuition-option {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+
+.addTuition-option::before {
+  content: "";
+  height: 24px;
+  width: 24px;
+  border: 2px solid #0b80ec;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addTuition-option:checked::before {
+  content: "\002714";
+  background: #0b80ec;
+  font-size: 18px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addTuition__table-header .addTuition__header-item:nth-child(2) {
+  margin-left: 59px;
+}
+
+.addTuition__table-header .addTuition__header-item:nth-child(3) {
+  margin-left: 56px;
+}
+
+.addTuition__table-header .addTuition__header-item:nth-child(4) {
+  margin-left: 218px;
+}
+
+/* table content */
+.addTuition__table-content {
+  width: 100%;
+  height: 392px;
+  list-style: none;
+}
+
+.addTuition__table-content .addTuition__table-item {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  line-height: 21px;
+  position: relative;
+}
+
+.addTuition__table-item:nth-of-type(2n) {
+  background-color: #f0f3f6;
+}
+
+.addTuition__table-item-information.addTuition__table-item-id {
+  position: absolute;
+  left: 145px;
+}
+
+.addTuition__table-item-information.addTuition__table-item-name {
+  position: absolute;
+  left: 222px;
+}
+
+.addTuition__table-item-information.addTuition__table-item-code {
+  position: absolute;
+  left: 555px;
+}

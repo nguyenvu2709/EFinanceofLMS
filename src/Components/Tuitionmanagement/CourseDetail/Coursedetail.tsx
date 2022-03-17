@@ -4,20 +4,20 @@ import { Link } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Modal, { ModalBody, ModalHeader } from "../../Modal/Modal";
-import "../tuitionmanagement.css";
-import "./CD.css";
-import iconInfo from "../../../assets/iconInfo.png";
-import Vector from "../../../assets/Vector.png"
-import iconClose from "../../../assets/iconClose.png";
-import { listTuition } from "../../data/Listtuition";
+import "../TuitionManagement.css";
+import "./CourseDetail.css";
+import iconInfo from "../../Assets/IconInfo.png";
+import iconClose from "../../Assets/iconClose.png";
+import { listTuition } from "../../data/listTuition";
 
-function Coursedetail() {
-    const [showModal, setShowModal] = useState(false);
-    const [showModalDetailTuition, setShowModalDetailTuition] = useState(false);
-    const [selectDate, setSelectDate] = useState(new Date());
-    return(
-        <Fragment>
-            <div className="container-board container-board-detailCourse">
+function CourseDetail() {
+  const [showModal, setShowModal] = useState(false);
+  const [showModalDetailTuition, setShowModalDetailTuition] = useState(false);
+  const [selectDate, setSelectDate] = useState(new Date());
+
+  return (
+    <Fragment>
+      <div className="container-board container-board-detailCourse">
         <div className="board-detailCourse-information">
           <div className="board-detailCourse-information-group">
             <div className="group-title group-title-class">
@@ -69,7 +69,7 @@ function Coursedetail() {
           </div>
         </div>
         <Link
-          to="list-student"
+          to="list-students"
           className="board-detailCourse-listStudents-btn"
         >
           Danh sách học viên
@@ -120,9 +120,10 @@ function Coursedetail() {
                     Ngừng áp dụng
                   </span>
                 </span>
-                <span 
+                <span
                   onClick={() => setShowModalDetailTuition(true)}
-                  className="tuition-table-item tuition-table-item-detail">
+                  className="tuition-table-item tuition-table-item-detail"
+                >
                   <img
                     src={iconInfo}
                     className="tuition-table-item-detail-icon"
@@ -142,7 +143,10 @@ function Coursedetail() {
                     Ngừng áp dụng
                   </span>
                 </span>
-                <span className="tuition-table-item tuition-table-item-detail">
+                <span
+                  onClick={() => setShowModalDetailTuition(true)}
+                  className="tuition-table-item tuition-table-item-detail"
+                >
                   <img
                     src={iconInfo}
                     className="tuition-table-item-detail-icon"
@@ -153,6 +157,8 @@ function Coursedetail() {
           </div>
         </div>
       </div>
+
+      {/* Modal add tuition */}
       <Modal className="modal__addTuition" show={showModal}>
         <ModalHeader>
           <h2 className="modal__header-title">Thêm biểu phí</h2>
@@ -224,6 +230,7 @@ function Coursedetail() {
         </ModalBody>
       </Modal>
 
+      {/* Modal detail tuition */}
       <Modal className="modal__detailTuition" show={showModalDetailTuition}>
         <ModalHeader>
           <h2 className="modal__header-title">Chi tiết biểu phí</h2>
@@ -303,8 +310,9 @@ function Coursedetail() {
             </ul>
           </div>
         </ModalBody>
-      </Modal> 
+      </Modal>
     </Fragment>
   );
 }
-export default Coursedetail
+
+export default CourseDetail;

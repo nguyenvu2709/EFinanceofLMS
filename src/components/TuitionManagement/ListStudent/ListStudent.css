@@ -1,0 +1,229 @@
+.container-board.container-board-listStudent {
+  height: 75.27777778%;
+  width: 85.41666667%;
+  top: 204px;
+}
+
+.container-board-title {
+  position: absolute;
+  top: 148px;
+  left: 215px;
+  font-family: Mulish;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+/* board-listStudent-header */
+.board-listStudent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+  margin: 24px 0;
+}
+
+.board-listStudent-header .board-listStudent-header-className {
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #cc5c00;
+}
+
+/* board-listStudent-body */
+.board-listStudent-body {
+  height: 69.513692%;
+  margin-left: 64px;
+  width: 92.123606%;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* header */
+.board-listStudent-body-header {
+  background: linear-gradient(270deg, #ff5400 0%, #f17f21 80.56%);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  height: 40px;
+  padding-left: 36px;
+}
+
+.board-listStudent-body-header-item {
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.board-listStudent-body-header-item:nth-child(2) {
+  margin-left: 48px;
+}
+
+.board-listStudent-body-header-item:nth-child(3) {
+  margin-left: 98px;
+}
+
+.board-listStudent-body-header-item:nth-child(4) {
+  margin-left: 64px;
+}
+
+.board-listStudent-body-header-item:nth-child(5) {
+  margin-left: 87px;
+}
+
+.board-listStudent-body-header-item:nth-child(6) {
+  margin-left: 61px;
+}
+
+.board-listStudent-body-header-item:nth-child(7) {
+  margin-left: 46px;
+}
+
+.board-listStudent-body-header-item:nth-child(8) {
+  margin-left: 39px;
+}
+
+.board-listStudent-body-header-item .arrow-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+/* list student */
+.board-listStudent-body-list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  max-height: 95.83%;
+  overflow-y: scroll;
+}
+
+.board-listStudent-body-list::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 15px;
+  background-color: #e0e0e0;
+}
+
+.board-listStudent-body-list::-webkit-scrollbar-thumb {
+  background-color: #999796;
+  border-radius: 15px;
+}
+
+.board-listStudent-body-item {
+  display: flex;
+  align-items: center;
+  padding-left: 36px;
+  height: 58px;
+}
+
+.board-listStudent-body-item:nth-of-type(2n) {
+  background-color: #f0f3f6;
+}
+
+.board-listStudent-body-item-information {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  color: #373839;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-order {
+  position: absolute;
+  left: 48px;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-name {
+  position: absolute;
+  left: 116px;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-studentID {
+  position: absolute;
+  left: 336px;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-gender {
+  position: absolute;
+  left: 472px;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-DOB {
+  position: absolute;
+  left: 626px;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-quantity {
+  position: absolute;
+  left: 830px;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-discount {
+  position: absolute;
+  left: 958px;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-status {
+  position: absolute;
+  left: 1134px;
+  min-width: 142px;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 16px;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-status.board-listStudent-body-item-status--done {
+  border: 1px solid #0b80ec;
+  color: #0b80ec;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-status.board-listStudent-body-item-status--notdone {
+  border: 1px solid #ed2025;
+  color: #ed2025;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-status.board-listStudent-body-item-status--done::before {
+  background: #0b80ec;
+}
+
+.board-listStudent-body-item-information.board-listStudent-body-item-status.board-listStudent-body-item-status--notdone::before {
+  background: #ed2025;
+}
+
+.board-listStudent-body-item-information .board-listStudent-body-item-icon {
+  position: absolute;
+  right: 124px;
+  color: #ff7506;
+  cursor: pointer;
+  width: 26px;
+  margin-top: -12px;
+}
+
+.board-listStudent-body-total {
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.015em;
+  color: #373839;
+  position: absolute;
+  right: 0;
+  margin-top: 24px;
+}

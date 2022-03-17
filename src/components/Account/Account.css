@@ -1,0 +1,52 @@
+.container-account {
+  align-items: center;
+  display: inline-flex;
+  justify-content: end;
+  margin-right: 64px;
+  margin-top: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.account-avatar {
+  height: 34px;
+  width: 34px;
+}
+
+.account-name {
+  color: #373839;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 20px;
+  margin-left: 6px;
+  padding-right: 25px;
+  position: relative;
+}
+
+.account-name::after {
+  border-left: 1px solid #823b00;
+  content: "";
+  display: block;
+  height: 36px;
+  margin: 0 12px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.account-logout {
+  border-bottom: 1px solid #ff7506;
+  color: #ff7506;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration: none;
+  cursor: pointer;
+}
